@@ -19,7 +19,7 @@
 
     if(data.endsWith("\n")) repo.pop();
 
-    if(!localStorage.c) localStorage.installedScripts = [];
+    if(!localStorage.installedScripts) localStorage.installedScripts = [];
 
     var parent = document.getElementsByTagName('head').item(0);
     let scriptElements = parent.getElementsByTagName('script');
